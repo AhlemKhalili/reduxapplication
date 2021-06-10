@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {background: #ff6e7f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #bfe9ff, #ff6e7f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #bfe9ff, #ff6e7f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todolist {
+    background: #ff6e7f;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #bfe9ff, #ff6e7f);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #bfe9ff, #ff6e7f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.heading h1 {
+    width: 60%;
+    margin-top: 30px;
+    background-color: #bfe9ff;
+    border-radius: 10px;
+    border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
+    padding: 0.2rem 1.2rem;
+    color: #494a4b;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todolist form {
+    margin-top: 40px;
+}
+
+.todolist input {  
+    border: 0;
+    border-bottom: 3px dashed #bfe9ff;
+    background-color: transparent;
+    font-family: "Architects Daughter", sans-serif;
+    font-size: 1.3rem;
+    padding: 10px 15px;
+    width: 70%;
+    color: #494a4b;
+}
+
+.todolist button {
+    margin: 15px 10px;
+    
+    border: 3px solid #bfe9ff;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-family: "Architects Daughter", sans-serif;
+    font-size: 0.9rem;
+}
+
+
+.items {
+    margin: 50px 0 0 30px;
+}
+
+.items ul li {
+    text-align: left;   
+    /* margin: 20px 10px; */
+    font-size: 3rem;
+    font-weight: 300;
+    color: #494a4b;
+}
+
+.item{
+    display : flex;
+    align-content : center;
+    justify-content:center
+}
+.done{
+    text-decoration: line-through;
+}
+.gdone{
+  color:white;
+  background-color:#bfe9ff
+}
+.rdone{
+  color:white;
+  background-color:#ff6e7f
 }
